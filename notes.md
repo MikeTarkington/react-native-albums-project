@@ -1,0 +1,5 @@
+- header component
+- card section component - artist name etc
+- card - image
+- nested card section - image
+- same lvl nested card section - buy now

@@ -1,11 +1,11 @@
 // import a library to help create a Component
 import React from 'react'; // knows how components should behave and make them work together
 // import ReactNative from 'react-native';
-import { Text, AppRegistry } from 'react-native'; // portal to mobile device that knows how to take output from component and place it on screen, provides core components like 'image' and 'text'
+import { AppRegistry, View } from 'react-native'; // portal to mobile device that knows how to take output from component and place it on screen, provides core components like 'image' and 'text'
   // there aren't global variables accross other files so there must be imports for code that will be included from other files
 // access the exported Header component created in the other src components folder:
-import Header from './src/components/header'; // like using a require_relative or require which points to particular file path
-
+import Header from './src/components/Header'; // like using a require_relative or require which points to particular file path
+import AlbumList from './src/components/AlbumList';
 
 // create a Component
 const App = () => {
@@ -13,7 +13,12 @@ const App = () => {
     // <Text>Fart Knockers!</Text>
     // make use of the component we imported from the header file
     // the header will use the headerText prop created in the Header component and this means we can set it to a different string so that the header can be adjusted to work with the corresponding page
-    <Header headerText={'Albums'} />
+    // can only return one tag in JSX so we wrap our two tags in a single View
+    <View>
+      <Header headerText={'Albums'} />
+      <AlbumList />
+    </View>
+
   );
 };
 

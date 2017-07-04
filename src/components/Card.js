@@ -1,10 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
 
-const Card = () => {
+const Card = (props) => {
   return (
+    // applies the styles const to the view tag
     <View style={styles.containerStyle}>
-
+      {/* gets the album details to appear within card which is rendred on index */}
+      {props.children}
     </View>
   );
 };

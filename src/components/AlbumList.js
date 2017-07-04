@@ -1,6 +1,6 @@
 // add the component Class to the import from the React library
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 // ran `npm install --save axios` in console
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
@@ -58,9 +58,9 @@ class AlbumList extends Component {
     // console.log(this.state);
 
     return (
-      <View>
+      <ScrollView>
         {this.renderAlbums()}
-      </View>
+      </ScrollView>
     );
   }
 }

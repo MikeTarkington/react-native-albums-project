@@ -14,7 +14,7 @@ const App = () => {
     // make use of the component we imported from the header file
     // the header will use the headerText prop created in the Header component and this means we can set it to a different string so that the header can be adjusted to work with the corresponding page
     // can only return one tag in JSX so we wrap our two tags in a single View
-    <View>
+    <View style={{ flex: 1}}>
       <Header headerText={'Albums'} />
       <AlbumList />
     </View>
